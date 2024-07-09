@@ -1,6 +1,8 @@
-import { Fade } from "react-awesome-reveal"
-import TypingEffect from "./TypingEffect"
 import { useEffect, useRef } from "react"
+import { Fade } from "react-awesome-reveal"
+
+import TypingEffect from "./TypingEffect"
+import { SlideShowSvg } from "./slideShowSvg";
 
 
 export default function LandingPage() {
@@ -13,22 +15,22 @@ export default function LandingPage() {
     }, [landingPageRef.current])
 
     return (
-        <div className="w-full relative h-[100vh] overflow-scroll z-10 bg-transparent text-white no-scrollbar" ref={landingPageRef}>
-            <div className="flex flex-col items-center justify-center h-full text-[50px]">
-                <Fade>
-                    <TypingEffect message={"Hello !"} />
-                </Fade>
-                <Fade>
-                    I'm Kushagra Mishra
-                </Fade>
-                <Fade>
-                    Software Developer
-                </Fade>
+        <div className="w-full relative no-scrollbar" ref={landingPageRef}>
+            <div className="flex flex-col md:flex-row justify-center h-[100vh] w-full">
+                <div className="flex flex-col text-[50px] items-center justify-center w-full">
+                    <Fade cascade duration={200} delay={70} triggerOnce>
+                        <span>Hello !</span><span>👋</span>
+                    </Fade>
+                    <Fade cascade duration={200} delay={1000} triggerOnce>
+                        I'm Kushagra Mishra
+                    </Fade>
+                    <Fade cascade duration={200} delay={3000} triggerOnce>Software Developer</Fade>
+                </div>
+                <div className="flex items-center justify-center w-full">
+                    <div className="flex items-center min-w-[170px] min-h-[170px] max-w-[200px] max-h-[200px]"><SlideShowSvg /></div>
+                </div>
             </div>
-            <div className="text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="down-arrow"><path fill="none" stroke-miterlimit="10" stroke-width="4" d="M32,61.12l28-28-28,28-28-28"></path><line x1="32" x2="32" y2="61.12" fill="none" stroke="#020202" stroke-miterlimit="10" stroke-width="4"></line></svg>
-            </div>
-            <p className="h-[200px]">hii there </p>
+            <div className="h-[200vh]"></div>
         </div>
     )
 }
