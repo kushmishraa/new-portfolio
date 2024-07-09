@@ -6,7 +6,7 @@ export const SlideShowSvg = () => {
     const [workHistory, setWorkHistory] = useState<any>();
     const [animationKey, setAnimationKey] = useState(0);
 
-    const workHistoryListing = ["/Svg/nextjs.svg", "/Svg/nodejs-icon.svg", "/Svg/React-icon.svg", "/Svg/docker-tile.svg"]
+    const workHistoryListing = ["/Svg/nextjs.svg", "/Svg/nodejs-icon.svg", "/Svg/React-icon.svg", "/Svg/docker-tile.svg", "/Svg/Sql_data_base_with_logo.svg"]
 
     const workHistoryTimeline = () => {
         let index = 0;
