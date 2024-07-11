@@ -1,13 +1,13 @@
 import Image from "next/image"
 import { Fade } from "react-awesome-reveal"
 
-export const EducationSection = () => {
+export const ExperienceSection = () => {
     return (
-        <div className="p-[20px] flex flex-col overflow-hidden gap-[10px]">
+        <div className="section flex flex-col overflow-hidden gap-[10px]">
+
             <div className="flex flex-col">
                 <Fade><h1 className="font-bold">Experience</h1></Fade>
             </div>
-
 
             <div className="flex flex-col gap-[10px]">
                 <Fade direction="right">

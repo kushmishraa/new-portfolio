@@ -27,6 +27,15 @@ body {
     scrollbar-width: none;
     /* Firefox */
   }
+
+  .section {
+    padding: 20px;
+  }
+
+  .section h1 {
+    font-weight: bold;
+    font-size: 26px;
+  }
 }
 
 .bounce {

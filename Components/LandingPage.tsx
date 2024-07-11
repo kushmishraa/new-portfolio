@@ -1,10 +1,8 @@
 import { useEffect, useRef } from "react"
-import { Fade } from "react-awesome-reveal"
 
-import TypingEffect from "./TypingEffect"
-import { SlideShowSvg } from "./slideShowSvg";
 import { HeroSection } from "./HeroSection";
-import { EducationSection } from "./EducationSection";
+import { ExperienceSection } from "./ExperienceSection";
+import { SkillsSection } from "./SkillsSection";
 
 
 export default function LandingPage() {
@@ -22,7 +20,10 @@ export default function LandingPage() {
                 <HeroSection name="Kushagra Mishra" position="Software Developer" />
             </div>
             <div>
-                <EducationSection />
+                <ExperienceSection />
+            </div>
+            <div>
+                <SkillsSection />
             </div>
         </div>
     )

@@ -31,7 +31,9 @@ export const HeroSection: React.FC<heroSectionPropTypes> = ({ name, position }) 
                 <div className="relative">
                     <Fade delay={4500} triggerOnce duration={200} className="w-full flex items-center justify-center">
                         <div className="relative w-[300px] h-[200px]">
-                            <Image src="/images/laptop.jpg" fill alt="img" />
+                            <Fade triggerOnce cascade delay={4000}>
+                                <Image src="/images/laptop.jpg" fill alt="img" />
+                            </Fade>
                         </div>
                         <div className="absolute w-full h-full top-0 flex justify-center items-center pb-[30px]">
                             <div className="flex items-center min-w-[100px] min-h-[100px] max-w-[100px] max-h-[100px]">
