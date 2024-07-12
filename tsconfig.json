@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     "utils/utilsFunction.js"
-  ],
+, "Components/SkillsSection.js", "Components/SlickCraousel.js", "Components/ExperienceSection.js"  ],
   "exclude": [
     "node_modules"
   ]
