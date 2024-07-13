@@ -4,31 +4,36 @@ import { Fade } from "react-awesome-reveal";
 import { SlickCraousel } from "./SlickCraousel";
 export const SkillsSection = () => {
   const skillsLogo = [
-    "nextjs.svg",
-    "nodejs-icon.svg",
-    "github-icon-2.svg",
-    "docker-tile.svg",
-    "Sql_data_base_with_logo.svg",
-    "React-icon.svg",
+    { logo: "nextjs.svg", name: "Next JS" },
+    { logo: "nodejs-icon.svg", name: "Node JS" },
+    { logo: "github-icon-2.svg", name: "GitHub" },
+    { logo: "docker-tile.svg", name: "Docker" },
+    { logo: "Sql_data_base_with_logo.svg", name: "SQL" },
+    { logo: "React-icon.svg", name: "React JS" },
+    { logo: "tailwind_logo.svg", name: "TailWind CSS" },
+    { logo: "Amazon_Web_Services-Logo.wine.svg", name: "AWS Essentials" },
+    { logo: "HTML5_Badge.svg", name: "HTML5" }
   ];
 
   return (
-    <div className="section overflow-hidden">
-      <Fade>
+    <div className="">
+      <Fade className="section">
         <div>
           <h1>Skills</h1>
         </div>
       </Fade>
-
-      <div className="w-full flex justify-center h-[100vh]">
-        <div className="w-1/2 flex flex-col justify-center max-h-[120px] rounded-full">
-          <SlickCraousel autoplay={true} dots={false} pauseOnHover={false}>
-            {skillsLogo.map((logo) => {
+      <div className="w-full flex justify-center">
+        <div className="overflow-hidden">
+          <SlickCraousel autoplay pauseOnHover>
+            {skillsLogo.map((skill) => {
               return (
                 <div className="">
-                  <div className="flex items-center justify-center w-[150px] min-h-[120px] hover:scale-[1.2]">
+                  <div className="flex flex-col items-center justify-center w-[150px] min-h-[120px] hover:scale-[1.2]">
                     <div className="relative max-w-[70px] w-[70px] min-h-[70px] max-h-[70px]">
-                      <Image src={`/Svg/${logo}`} fill alt="img" />
+                      <Image src={`/Svg/${skill.logo}`} fill alt="img" />
+                    </div>
+                    <div className="text-[12px]">
+                      {skill.name}
                     </div>
                   </div>
                 </div>
@@ -37,6 +42,6 @@ export const SkillsSection = () => {
           </SlickCraousel>
         </div>
       </div>
-    </div>
+    </div >
   );
 };

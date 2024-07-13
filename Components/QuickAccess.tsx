@@ -28,9 +28,9 @@ const QuickAccess = () => {
     }
 
     return (
-        <div onClick={handleClick} className="p-[5px] fixed top-1/2 overflow-hidden  text-white translate-x-[90px] origin-right right-0 z-50 transition delay-[50] bg-black w-[120px] h-[100px] rounded-lg drop-shadow-lg flex items-center" ref={headerRef}>
+        <div onClick={handleClick} className="p-[5px] fixed top-1/2 overflow-hidden  text-white translate-x-[90px] origin-right right-0 z-50 transition delay-[50] bg-[#000] w-[120px] h-[100px] rounded-lg drop-shadow-xl flex items-center" ref={headerRef}>
             <div className="w-full flex items-center">
-                <div className="text-xl font-bold [&>svg]:w-[20px] [&>svg]:h-[20px]" ref={arrowRef}><LeftArrow fill={"#FFFFFF"} /></div>
+                <div className="text-xl font-bold [&>svg]:w-[20px] [&>svg]:h-[20px]" ref={arrowRef}><LeftArrow fill={"#FFF"} /></div>
                 <div className="w-full flex flex-col gap-2 justify-center items-center">
                     <div className="relative w-[35px] h-[35px] max-w-[35px] max-h-[35px] hover:scale-[1.2]" onClick={handleCardClick}>
                         <Image src="/Svg/gmail_logo.svg" fill alt="gmail" />

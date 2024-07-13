@@ -3,49 +3,31 @@ interface heroSectionPropTypes {
     position: string
 }
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 import { Fade } from "react-awesome-reveal";
-import { SlideShowSvg } from "./slideShowSvg";
-import Image from "next/image";
 
 export const HeroSection: React.FC<heroSectionPropTypes> = ({ name, position }) => {
 
+
+
     return (
-        <div className="flex flex-col md:flex-row justify-center h-[100vh] w-full">
+        <div className="flex md:flex-row justify-center h-[100vh] w-full">
             <div className="flex flex-col items-center justify-center w-full">
                 <div className="flex flex-col">
                     <div className="flex">
-                        <Fade cascade duration={300} delay={500} triggerOnce className="text-[40px]">
+                        <h1><Fade cascade duration={300} delay={500} triggerOnce className="text-[80px] signature rotate-[-10deg]" >
                             Hello !
-                        </Fade>
-                        <span className="wave text-[40px]">👋</span>
+                        </Fade></h1>
                     </div>
-                    <Fade cascade duration={200} delay={1000} triggerOnce className="text-[28px]">
-                        {`I'm ${name}`}
-                    </Fade>
-                    <Fade cascade duration={200} delay={3000} triggerOnce>{position}</Fade>
-                </div>
-            </div>
-            <div className=" w-full flex flex-col items-center justify-center">
-                <div className="relative">
-                    <Fade delay={4500} triggerOnce duration={200} className="w-full flex items-center justify-center">
-                        <div className="relative w-[300px] h-[200px]">
-                            <Fade triggerOnce cascade delay={4000}>
-                                <Image src="/images/laptop.jpg" fill alt="img" />
-                            </Fade>
-                        </div>
-                        {/* <div className="relative w-full h-[500px] ">
-                            <Fade triggerOnce cascade delay={4000}>
-                                <Image src="/images/iphone.jpg" fill alt="img" />
-                            </Fade>
-                        </div> */}
-                        <div className="absolute w-full h-full top-0 flex justify-center items-center pb-[30px]">
-                            <div className="flex items-center min-w-[100px] min-h-[100px] max-w-[100px] max-h-[100px]">
-                                <SlideShowSvg />
-                            </div>
-                        </div>
-                    </Fade>
+                    <div className="text-[18px]">
+                        <Fade cascade duration={300} delay={1500} triggerOnce className="text-[28px]">
+                            <h2>{`I'm ${name}`}</h2>
+                        </Fade>
+                        <Fade duration={300} cascade delay={2000} triggerOnce><h2>{position}</h2></Fade>
+                        <Fade duration={300} cascade delay={2500} triggerOnce><h2>1 year 8 Months</h2></Fade>
+                        <Fade duration={300} cascade delay={3000} triggerOnce><h2>Pune, MH, India</h2></Fade>
+                    </div>
                 </div>
             </div>
         </div>

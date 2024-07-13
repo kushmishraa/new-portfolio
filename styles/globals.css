@@ -11,7 +11,36 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
+  background-color: #EBF4F6;
+  color: black;
 }
+
+h1 {
+  color: #088395;
+}
+
+.signature {
+  font-family: "Great Vibes", cursive;
+}
+
+.cursor-highlight {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: #37B7C3;
+  z-index: 1;
+  /* Example highlight background */
+  border-radius: 50%;
+  /* Make it a circle */
+  pointer-events: none;
+  /* Make sure the div doesn't capture mouse events */
+  transform: translate(-50%, -50%);
+  /* Center the highlight under the cursor */
+  display: none;
+  /* Initially hidden */
+  filter: blur(150px);
+}
+
 
 @layer utilities {
 

@@ -15,13 +15,15 @@ export const SlickCraousel = ({ pauseOnHover, dots, autoplay, children }) => {
     dots: dots,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 1,
-    centerMode: false,
-    centerPadding: "70px",
+    centerMode: true,
+    centerPadding: "100px",
     autoplay: autoplay,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
+    speed: 1500,
     pauseOnHover: pauseOnHover,
+    arrows: false
   };
 
   return <Slider {...settings}>{children}</Slider>;
