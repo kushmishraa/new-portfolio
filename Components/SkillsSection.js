@@ -12,7 +12,8 @@ export const SkillsSection = () => {
     { logo: "React-icon.svg", name: "React JS" },
     { logo: "tailwind_logo.svg", name: "TailWind CSS" },
     { logo: "Amazon_Web_Services-Logo.wine.svg", name: "AWS Essentials" },
-    { logo: "HTML5_Badge.svg", name: "HTML5" }
+    { logo: "HTML5_Badge.svg", name: "HTML5" },
+    { logo: "sass-lang-ar21.svg", name: "SCSS" }
   ];
 
   return (
@@ -24,11 +25,11 @@ export const SkillsSection = () => {
       </Fade>
       <div className="w-full flex justify-center">
         <div className="overflow-hidden">
-          <SlickCraousel autoplay pauseOnHover>
+          <SlickCraousel autoplay pauseOnHover slidesToShow={6} centerMode={true} centerPad={"100px"}>
             {skillsLogo.map((skill) => {
               return (
                 <div className="">
-                  <div className="flex flex-col items-center justify-center w-[150px] min-h-[120px] hover:scale-[1.2]">
+                  <div className="flex flex-col transition-all delay-75 items-center justify-center w-[150px] min-h-[120px] hover:scale-[1.2]">
                     <div className="relative max-w-[70px] w-[70px] min-h-[70px] max-h-[70px]">
                       <Image src={`/Svg/${skill.logo}`} fill alt="img" />
                     </div>

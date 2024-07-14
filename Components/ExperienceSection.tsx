@@ -24,7 +24,7 @@ export const ExperienceSection = () => {
               <div className="text-[16px]">Software Engineer</div>
               <div className="w-full">
                 <ul>
-                  <li className="flex gap-4 text-[15px]">
+                  <li className="flex gap-4 text-[18px]">
                     <div>-</div>
                     <div>
                       <p>Given knowledge transfer to new interns that joined the company Given knowledge transfer to new interns that joined the company Given knowledge transfer to new interns that joined the company</p>
@@ -49,7 +49,7 @@ export const ExperienceSection = () => {
               <div className="text-[16px]">Software Engineer Intern</div>
               <div className="w-full">
                 <ul>
-                  <li className="flex gap-4 text-[15px]">
+                  <li className="flex gap-4 text-[18px]">
                     <div>-</div>
                     <div>
                       <p>Given knowledge transfer to new interns that joined the company Given knowledge transfer to new interns that joined the company Given knowledge transfer to new interns that joined the company</p>

@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react"
 import { HeroSection } from "./HeroSection";
 import { ExperienceSection } from "./ExperienceSection";
 import { SkillsSection } from "./SkillsSection";
+import { ProjectSection } from "./ProjectSection";
 
 
 export default function LandingPage() {
@@ -24,6 +25,12 @@ export default function LandingPage() {
             </div>
             <div>
                 <SkillsSection />
+            </div>
+            <div>
+                <ProjectSection />
+            </div>
+            <div className="w-full h-[100vh]">
+
             </div>
         </div>
     )

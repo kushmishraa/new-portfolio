@@ -16,7 +16,7 @@ export const HeroSection: React.FC<heroSectionPropTypes> = ({ name, position }) 
             <div className="flex flex-col items-center justify-center w-full">
                 <div className="flex flex-col gap-[30px] md:gap-0">
                     <div className="flex">
-                        <h1><Fade cascade duration={300} delay={500} triggerOnce className="text-[80px] signature rotate-[-10deg]" >
+                        <h1><Fade cascade duration={300} delay={500} triggerOnce className="text-[120px] signature rotate-[-10deg]" >
                             Hello !
                         </Fade></h1>
                     </div>

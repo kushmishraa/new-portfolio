@@ -10,15 +10,15 @@ const CustomNextButton = () => {
   );
 };
 
-export const SlickCraousel = ({ pauseOnHover, dots, autoplay, children }) => {
+export const SlickCraousel = ({ pauseOnHover, dots, autoplay, children, slidesToShow, centerMode, centerPad }) => {
   var settings = {
     dots: dots,
     infinite: true,
     speed: 500,
-    slidesToShow: 6,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: "100px",
+    centerMode: centerMode,
+    centerPadding: centerPad,
     autoplay: autoplay,
     autoplaySpeed: 2000,
     speed: 1500,
