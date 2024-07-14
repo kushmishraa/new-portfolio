@@ -4,7 +4,7 @@ import { SlickCraousel } from "./SlickCraousel"
 
 export const ProjectSection = () => {
     return (
-        <div className="section flex flex-col min-h-[100vh]">
+        <div className="section flex flex-col justify-around min-h-[100vh]">
             <div className="">
                 <h1><Fade>What i've done so far</Fade></h1>
             </div>
